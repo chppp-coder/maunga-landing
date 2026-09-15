@@ -448,16 +448,6 @@ h1,h2,h3,h4,h5,h6 { font-size: inherit; font-weight: inherit; }
   scroll-margin-top: 96px;
 }
 
-/* Badge de origen del hero: en pantallas muy angostas (<400px) el segmento
-   "• Estándar Puro" no cabe junto a "Nueva Zelanda → Chile" y rompe la forma
-   de la píldora al envolver texto. Se oculta ese segmento secundario y se
-   conserva solo la información principal en una sola línea. */
-@media (max-width: 400px) {
-  .hero-badge-extra {
-    display: none;
-  }
-}
-
 /* Puntos de paginación del carrusel de "Trabajos terminados".
    Cada botón tiene un área táctil de 24x24px aunque el punto visible sea chico. */
 .galeria-dot-btn {
