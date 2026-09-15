@@ -79,7 +79,7 @@
 </div>
 </a>
 <!-- Links de Navegación -->
-<nav class="hidden lg:flex items-center gap-7">
+<nav class="hidden lg:flex items-center gap-4 flex-shrink-0 whitespace-nowrap">
 <a class="text-sm font-medium text-white/80 hover:text-[#F2AD6D] transition-colors" href="#diferencia">Nuestra diferencia</a>
 <a class="text-sm font-medium text-white/80 hover:text-[#F2AD6D] transition-colors" href="#trabajos">Trabajos</a>
 <a class="text-sm font-medium text-white/80 hover:text-[#F2AD6D] transition-colors" href="#servicios">Servicios</a>
@@ -111,9 +111,11 @@
 <!-- Origin Badge -->
 <div class="hero-anim hero-anim-1 inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-black/40 backdrop-blur-md border border-white/20 shadow-sm mb-6">
 <span class="material-symbols-outlined text-[#F2AD6D] text-[18px]">altitude</span>
-<span class="text-[11px] font-bold uppercase tracking-[0.25em] text-white">Nueva Zelanda → Chile</span>
+<span class="whitespace-nowrap text-[11px] font-bold uppercase tracking-[0.25em] text-white">Nueva Zelanda → Chile</span>
+<span class="hero-badge-extra inline-flex items-center gap-2">
 <span class="w-1.5 h-1.5 rounded-full bg-[#F2AD6D] animate-pulse ml-1"></span>
-<span class="text-xs text-white/80 pl-1 border-l border-white/20">Estándar Puro</span>
+<span class="whitespace-nowrap text-xs text-white/80 pl-1 border-l border-white/20">Estándar Puro</span>
+</span>
 </div>
 <!-- Main Title -->
 <h1 class="hero-anim hero-anim-2 font-display font-black text-4xl sm:text-5xl lg:text-6xl tracking-tight leading-[1.1] text-white mb-6">
@@ -402,61 +404,61 @@
 <!-- CARRUSEL HORIZONTAL: fotos reales de Chile y Nueva Zelanda -->
 <div class="relative">
 <div class="flex items-center gap-3 overflow-x-auto snap-x snap-mandatory scroll-smooth pb-4 -mx-1 px-1" id="galeria-track" style="scrollbar-width:none;">
-<div class="reveal group relative h-80 w-[85%] sm:w-[46%] lg:w-[31%] flex-shrink-0 snap-center rounded-3xl overflow-hidden shadow-xl border border-white/10 cursor-zoom-in" onclick="abrirGaleriaLightbox(this)">
+<div class="reveal group relative h-80 w-carousel-card sm:w-[46%] lg:w-[31%] flex-shrink-0 snap-center rounded-3xl overflow-hidden shadow-xl border border-white/10 cursor-zoom-in" onclick="abrirGaleriaLightbox(this)">
 <img alt="Faena de limpieza en altura, Chile" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="images/work-chile-1.jpg"/>
 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent"></div>
 <div class="absolute top-4 left-4 px-3 py-1 rounded-full bg-[#1C2E17]/90 backdrop-blur-md text-[#F2AD6D] text-xs font-bold uppercase tracking-wider">Chile</div>
 <span class="absolute bottom-4 right-4 w-9 h-9 rounded-full bg-white/15 backdrop-blur-md flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity"><span class="material-symbols-outlined text-[18px]">zoom_in</span></span>
 </div>
-<div class="reveal group relative h-80 w-[85%] sm:w-[46%] lg:w-[31%] flex-shrink-0 snap-center rounded-3xl overflow-hidden shadow-xl border border-white/10 cursor-zoom-in" onclick="abrirGaleriaLightbox(this)">
+<div class="reveal group relative h-80 w-carousel-card sm:w-[46%] lg:w-[31%] flex-shrink-0 snap-center rounded-3xl overflow-hidden shadow-xl border border-white/10 cursor-zoom-in" onclick="abrirGaleriaLightbox(this)">
 <img alt="Vista desde interior con lago, Nueva Zelanda" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="images/work-nz-15.jpg"/>
 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent"></div>
 <div class="absolute top-4 left-4 px-3 py-1 rounded-full bg-[#2C3440]/90 backdrop-blur-md text-white text-xs font-bold uppercase tracking-wider">Nueva Zelanda</div>
 <span class="absolute bottom-4 right-4 w-9 h-9 rounded-full bg-white/15 backdrop-blur-md flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity"><span class="material-symbols-outlined text-[18px]">zoom_in</span></span>
 </div>
-<div class="reveal group relative h-80 w-[85%] sm:w-[46%] lg:w-[31%] flex-shrink-0 snap-center rounded-3xl overflow-hidden shadow-xl border border-white/10 cursor-zoom-in" onclick="abrirGaleriaLightbox(this)">
+<div class="reveal group relative h-80 w-carousel-card sm:w-[46%] lg:w-[31%] flex-shrink-0 snap-center rounded-3xl overflow-hidden shadow-xl border border-white/10 cursor-zoom-in" onclick="abrirGaleriaLightbox(this)">
 <img alt="Limpieza de techo y canaletas, Chile" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="images/work-chile-3.jpg"/>
 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent"></div>
 <div class="absolute top-4 left-4 px-3 py-1 rounded-full bg-[#1C2E17]/90 backdrop-blur-md text-[#F2AD6D] text-xs font-bold uppercase tracking-wider">Chile</div>
 <span class="absolute bottom-4 right-4 w-9 h-9 rounded-full bg-white/15 backdrop-blur-md flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity"><span class="material-symbols-outlined text-[18px]">zoom_in</span></span>
 </div>
-<div class="reveal group relative h-80 w-[85%] sm:w-[46%] lg:w-[31%] flex-shrink-0 snap-center rounded-3xl overflow-hidden shadow-xl border border-white/10 cursor-zoom-in" onclick="abrirGaleriaLightbox(this)">
+<div class="reveal group relative h-80 w-carousel-card sm:w-[46%] lg:w-[31%] flex-shrink-0 snap-center rounded-3xl overflow-hidden shadow-xl border border-white/10 cursor-zoom-in" onclick="abrirGaleriaLightbox(this)">
 <img alt="Pérgola y fachada, Nueva Zelanda" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="images/work-nz-4.jpg"/>
 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent"></div>
 <div class="absolute top-4 left-4 px-3 py-1 rounded-full bg-[#2C3440]/90 backdrop-blur-md text-white text-xs font-bold uppercase tracking-wider">Nueva Zelanda</div>
 <span class="absolute bottom-4 right-4 w-9 h-9 rounded-full bg-white/15 backdrop-blur-md flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity"><span class="material-symbols-outlined text-[18px]">zoom_in</span></span>
 </div>
-<div class="reveal group relative h-80 w-[85%] sm:w-[46%] lg:w-[31%] flex-shrink-0 snap-center rounded-3xl overflow-hidden shadow-xl border border-white/10 cursor-zoom-in" onclick="abrirGaleriaLightbox(this)">
+<div class="reveal group relative h-80 w-carousel-card sm:w-[46%] lg:w-[31%] flex-shrink-0 snap-center rounded-3xl overflow-hidden shadow-xl border border-white/10 cursor-zoom-in" onclick="abrirGaleriaLightbox(this)">
 <img alt="Limpieza de vidrios en altura, Chile" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="images/work-chile-4.jpg"/>
 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent"></div>
 <div class="absolute top-4 left-4 px-3 py-1 rounded-full bg-[#1C2E17]/90 backdrop-blur-md text-[#F2AD6D] text-xs font-bold uppercase tracking-wider">Chile</div>
 <span class="absolute bottom-4 right-4 w-9 h-9 rounded-full bg-white/15 backdrop-blur-md flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity"><span class="material-symbols-outlined text-[18px]">zoom_in</span></span>
 </div>
-<div class="reveal group relative h-80 w-[85%] sm:w-[46%] lg:w-[31%] flex-shrink-0 snap-center rounded-3xl overflow-hidden shadow-xl border border-white/10 cursor-zoom-in" onclick="abrirGaleriaLightbox(this)">
+<div class="reveal group relative h-80 w-carousel-card sm:w-[46%] lg:w-[31%] flex-shrink-0 snap-center rounded-3xl overflow-hidden shadow-xl border border-white/10 cursor-zoom-in" onclick="abrirGaleriaLightbox(this)">
 <img alt="Terraza con vista a cordillera, Nueva Zelanda" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="images/work-nz-12.jpg"/>
 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent"></div>
 <div class="absolute top-4 left-4 px-3 py-1 rounded-full bg-[#2C3440]/90 backdrop-blur-md text-white text-xs font-bold uppercase tracking-wider">Nueva Zelanda</div>
 <span class="absolute bottom-4 right-4 w-9 h-9 rounded-full bg-white/15 backdrop-blur-md flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity"><span class="material-symbols-outlined text-[18px]">zoom_in</span></span>
 </div>
-<div class="reveal group relative h-80 w-[85%] sm:w-[46%] lg:w-[31%] flex-shrink-0 snap-center rounded-3xl overflow-hidden shadow-xl border border-white/10 cursor-zoom-in" onclick="abrirGaleriaLightbox(this)">
+<div class="reveal group relative h-80 w-carousel-card sm:w-[46%] lg:w-[31%] flex-shrink-0 snap-center rounded-3xl overflow-hidden shadow-xl border border-white/10 cursor-zoom-in" onclick="abrirGaleriaLightbox(this)">
 <img alt="Limpieza de ventanales al atardecer, Chile" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="images/work-chile-5.jpg"/>
 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent"></div>
 <div class="absolute top-4 left-4 px-3 py-1 rounded-full bg-[#1C2E17]/90 backdrop-blur-md text-[#F2AD6D] text-xs font-bold uppercase tracking-wider">Chile</div>
 <span class="absolute bottom-4 right-4 w-9 h-9 rounded-full bg-white/15 backdrop-blur-md flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity"><span class="material-symbols-outlined text-[18px]">zoom_in</span></span>
 </div>
-<div class="reveal group relative h-80 w-[85%] sm:w-[46%] lg:w-[31%] flex-shrink-0 snap-center rounded-3xl overflow-hidden shadow-xl border border-white/10 cursor-zoom-in" onclick="abrirGaleriaLightbox(this)">
+<div class="reveal group relative h-80 w-carousel-card sm:w-[46%] lg:w-[31%] flex-shrink-0 snap-center rounded-3xl overflow-hidden shadow-xl border border-white/10 cursor-zoom-in" onclick="abrirGaleriaLightbox(this)">
 <img alt="Deck con vista a lago, Nueva Zelanda" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="images/work-nz-3.jpg"/>
 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent"></div>
 <div class="absolute top-4 left-4 px-3 py-1 rounded-full bg-[#2C3440]/90 backdrop-blur-md text-white text-xs font-bold uppercase tracking-wider">Nueva Zelanda</div>
 <span class="absolute bottom-4 right-4 w-9 h-9 rounded-full bg-white/15 backdrop-blur-md flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity"><span class="material-symbols-outlined text-[18px]">zoom_in</span></span>
 </div>
-<div class="reveal group relative h-80 w-[85%] sm:w-[46%] lg:w-[31%] flex-shrink-0 snap-center rounded-3xl overflow-hidden shadow-xl border border-white/10 cursor-zoom-in" onclick="abrirGaleriaLightbox(this)">
+<div class="reveal group relative h-80 w-carousel-card sm:w-[46%] lg:w-[31%] flex-shrink-0 snap-center rounded-3xl overflow-hidden shadow-xl border border-white/10 cursor-zoom-in" onclick="abrirGaleriaLightbox(this)">
 <img alt="Limpieza de canaletas y aleros, Chile" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="images/work-chile-2.jpg"/>
 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent"></div>
 <div class="absolute top-4 left-4 px-3 py-1 rounded-full bg-[#1C2E17]/90 backdrop-blur-md text-[#F2AD6D] text-xs font-bold uppercase tracking-wider">Chile</div>
 <span class="absolute bottom-4 right-4 w-9 h-9 rounded-full bg-white/15 backdrop-blur-md flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity"><span class="material-symbols-outlined text-[18px]">zoom_in</span></span>
 </div>
-<div class="reveal group relative h-80 w-[85%] sm:w-[46%] lg:w-[31%] flex-shrink-0 snap-center rounded-3xl overflow-hidden shadow-xl border border-white/10 cursor-zoom-in" onclick="abrirGaleriaLightbox(this)">
+<div class="reveal group relative h-80 w-carousel-card sm:w-[46%] lg:w-[31%] flex-shrink-0 snap-center rounded-3xl overflow-hidden shadow-xl border border-white/10 cursor-zoom-in" onclick="abrirGaleriaLightbox(this)">
 <img alt="Techo vivo y cordillera, Nueva Zelanda" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="images/work-nz-6.jpg"/>
 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent"></div>
 <div class="absolute top-4 left-4 px-3 py-1 rounded-full bg-[#2C3440]/90 backdrop-blur-md text-white text-xs font-bold uppercase tracking-wider">Nueva Zelanda</div>
@@ -470,6 +472,19 @@
 <button aria-label="Siguiente" class="hidden sm:flex absolute -right-4 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-white shadow-lg items-center justify-center text-[#1C2E17] hover:bg-[#F2AD6D] transition-colors z-10" onclick="moverGaleria(1)" type="button">
 <span class="material-symbols-outlined">arrow_forward</span>
 </button>
+</div>
+<!-- Puntos de paginación: indican cuántas fotos hay y cuál está activa (se actualizan al hacer scroll/swipe) -->
+<div class="galeria-dots flex items-center justify-center flex-wrap gap-1 mt-5" id="galeria-dots">
+<button aria-current="true" aria-label="Ir a la foto 1 de 10" class="galeria-dot-btn is-active" data-dot-index="0" onclick="irAFotoGaleria(0)" type="button"><span class="galeria-dot"></span></button>
+<button aria-label="Ir a la foto 2 de 10" class="galeria-dot-btn" data-dot-index="1" onclick="irAFotoGaleria(1)" type="button"><span class="galeria-dot"></span></button>
+<button aria-label="Ir a la foto 3 de 10" class="galeria-dot-btn" data-dot-index="2" onclick="irAFotoGaleria(2)" type="button"><span class="galeria-dot"></span></button>
+<button aria-label="Ir a la foto 4 de 10" class="galeria-dot-btn" data-dot-index="3" onclick="irAFotoGaleria(3)" type="button"><span class="galeria-dot"></span></button>
+<button aria-label="Ir a la foto 5 de 10" class="galeria-dot-btn" data-dot-index="4" onclick="irAFotoGaleria(4)" type="button"><span class="galeria-dot"></span></button>
+<button aria-label="Ir a la foto 6 de 10" class="galeria-dot-btn" data-dot-index="5" onclick="irAFotoGaleria(5)" type="button"><span class="galeria-dot"></span></button>
+<button aria-label="Ir a la foto 7 de 10" class="galeria-dot-btn" data-dot-index="6" onclick="irAFotoGaleria(6)" type="button"><span class="galeria-dot"></span></button>
+<button aria-label="Ir a la foto 8 de 10" class="galeria-dot-btn" data-dot-index="7" onclick="irAFotoGaleria(7)" type="button"><span class="galeria-dot"></span></button>
+<button aria-label="Ir a la foto 9 de 10" class="galeria-dot-btn" data-dot-index="8" onclick="irAFotoGaleria(8)" type="button"><span class="galeria-dot"></span></button>
+<button aria-label="Ir a la foto 10 de 10" class="galeria-dot-btn" data-dot-index="9" onclick="irAFotoGaleria(9)" type="button"><span class="galeria-dot"></span></button>
 </div>
 </div>
 <!-- Lightbox de galería -->
@@ -801,15 +816,15 @@
 <form class="space-y-4" onsubmit="event.preventDefault(); sendToWhatsApp();">
 <div>
 <label class="block text-xs font-semibold text-[#1C2E17] mb-1.5" for="contact-name">Nombre o Empresa</label>
-<input class="w-full px-4 py-2.5 rounded-xl border border-stone-300 text-sm focus:border-[#F2AD6D] focus:ring-2 focus:ring-[#F2AD6D]/30 outline-none transition-all" id="contact-name" placeholder="Ej: Marcela Undurraga" required="" type="text"/>
+<input class="w-full px-4 py-3 rounded-xl border border-stone-300 text-sm focus:border-[#F2AD6D] focus:ring-2 focus:ring-[#F2AD6D]/30 outline-none transition-all" id="contact-name" placeholder="Ej: Marcela Undurraga" required="" type="text"/>
 </div>
 <div>
 <label class="block text-xs font-semibold text-[#1C2E17] mb-1.5" for="contact-commune">Comuna o Ubicación</label>
-<input class="w-full px-4 py-2.5 rounded-xl border border-stone-300 text-sm focus:border-[#F2AD6D] focus:ring-2 focus:ring-[#F2AD6D]/30 outline-none transition-all" id="contact-commune" placeholder="Ej: Lo Barnechea / Chicureo / Zapallar" required="" type="text"/>
+<input class="w-full px-4 py-3 rounded-xl border border-stone-300 text-sm focus:border-[#F2AD6D] focus:ring-2 focus:ring-[#F2AD6D]/30 outline-none transition-all" id="contact-commune" placeholder="Ej: Lo Barnechea / Chicureo / Zapallar" required="" type="text"/>
 </div>
 <div>
 <label class="block text-xs font-semibold text-[#1C2E17] mb-1.5" for="contact-service">Servicio Requerido</label>
-<select class="w-full px-4 py-2.5 rounded-xl border border-stone-300 text-sm focus:border-[#F2AD6D] focus:ring-2 focus:ring-[#F2AD6D]/30 outline-none transition-all bg-white" id="contact-service">
+<select class="w-full px-4 py-3 rounded-xl border border-stone-300 text-sm focus:border-[#F2AD6D] focus:ring-2 focus:ring-[#F2AD6D]/30 outline-none transition-all bg-white" id="contact-service">
 <option value="Vidrios y Ventanales de Gran Altura">Vidrios y fachadas (interior y exterior)</option>
 <option value="Limpieza de Paneles Solares">Paneles Solares Fotovoltaicos</option>
 <option value="Canaletas y Aleros Exteriores">Canaletas y Aleros</option>
@@ -929,6 +944,61 @@
       lightbox.classList.add('hidden');
       lightbox.classList.remove('flex');
     }
+
+    // Puntos de paginación del carrusel: desplaza hasta centrar la foto elegida
+    function irAFotoGaleria(index) {
+      var track = document.getElementById('galeria-track');
+      var card = track.children[index];
+      if (!card) return;
+      var trackRect = track.getBoundingClientRect();
+      var cardRect = card.getBoundingClientRect();
+      var offset = (cardRect.left + cardRect.width / 2) - (trackRect.left + trackRect.width / 2);
+      track.scrollBy({ left: offset, behavior: 'smooth' });
+    }
+
+    // Detecta con scroll (debounced) cuál foto queda más centrada y marca su punto activo
+    (function initGaleriaDots() {
+      var track = document.getElementById('galeria-track');
+      var dotsContainer = document.getElementById('galeria-dots');
+      if (!track || !dotsContainer) return;
+      var dots = Array.prototype.slice.call(dotsContainer.querySelectorAll('.galeria-dot-btn'));
+      var debounceTimer = null;
+
+      function updateActiveDot() {
+        var trackRect = track.getBoundingClientRect();
+        var trackCenter = trackRect.left + trackRect.width / 2;
+        var closestIndex = 0;
+        var closestDistance = Infinity;
+        Array.prototype.forEach.call(track.children, function (card, index) {
+          var cardRect = card.getBoundingClientRect();
+          var cardCenter = cardRect.left + cardRect.width / 2;
+          var distance = Math.abs(cardCenter - trackCenter);
+          if (distance < closestDistance) {
+            closestDistance = distance;
+            closestIndex = index;
+          }
+        });
+        dots.forEach(function (dot, index) {
+          var active = index === closestIndex;
+          dot.classList.toggle('is-active', active);
+          if (active) {
+            dot.setAttribute('aria-current', 'true');
+          } else {
+            dot.removeAttribute('aria-current');
+          }
+        });
+      }
+
+      track.addEventListener('scroll', function () {
+        clearTimeout(debounceTimer);
+        debounceTimer = setTimeout(updateActiveDot, 100);
+      }, { passive: true });
+
+      window.addEventListener('resize', function () {
+        clearTimeout(debounceTimer);
+        debounceTimer = setTimeout(updateActiveDot, 150);
+      });
+    })();
 
     function sendToWhatsApp() {
       var name = document.getElementById('contact-name').value || 'Cliente';

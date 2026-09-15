@@ -339,15 +339,39 @@ h1,h2,h3,h4,h5,h6 { font-size: inherit; font-weight: inherit; }
 .w-9{width:2.25rem}
 .w-96{width:24rem}
 .w-\[500px\]{width:500px}
-.w-\[85\%\]{width:85%}
+.w-carousel-card{width:calc(100% - 24px)}
 .w-fit{width:fit-content}
 .w-full{width:100%}
+.whitespace-nowrap{white-space:nowrap}
 .z-0{z-index:0}
 .z-10{z-index:10}
 .z-50{z-index:50}
 .z-\[100\]{z-index:100}
 .z-\[1\]{z-index:1}
 .material-symbols-outlined{font-family:'Material Symbols Outlined';font-weight:normal;font-style:normal;font-size:24px;line-height:1;letter-spacing:normal;text-transform:none;display:inline-block;white-space:nowrap;word-wrap:normal;direction:ltr;-webkit-font-smoothing:antialiased;font-variation-settings:'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 24}
+/* IMPORTANTE: estos tres bloques @media deben ir en orden mobile-first (sm, luego md,
+   luego lg). Con especificidad igual, CSS resuelve empates por orden de aparición en el
+   archivo, así que si "lg" apareciera antes que "sm"/"md", estos últimos ganarían por
+   error en pantallas grandes (donde las tres condiciones min-width son verdaderas a la
+   vez), dejando inservibles las reglas lg: en desktop. */
+@media (min-width:640px) {
+.sm\:flex{display:flex}
+.sm\:flex-row{flex-direction:row}
+.sm\:h-52{height:13rem}
+.sm\:items-center{align-items:center}
+.sm\:p-10{padding:2.5rem}
+.sm\:p-8{padding:2rem}
+.sm\:text-4xl{font-size:2.25rem;line-height:2.5rem}
+.sm\:text-5xl{font-size:3rem;line-height:1}
+.sm\:text-base{font-size:1rem;line-height:1.5rem}
+.sm\:text-lg{font-size:1.125rem;line-height:1.75rem}
+.sm\:w-\[46\%\]{width:46%}
+}
+@media (min-width:768px) {
+.md\:flex-row{flex-direction:row}
+.md\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.md\:items-end{align-items:flex-end}
+}
 @media (min-width:1024px) {
 .lg\:col-span-6{grid-column:span 6 / span 6}
 .lg\:flex{display:flex}
@@ -368,24 +392,6 @@ h1,h2,h3,h4,h5,h6 { font-size: inherit; font-weight: inherit; }
 .lg\:text-6xl{font-size:3.75rem;line-height:1}
 .lg\:text-xl{font-size:1.25rem;line-height:1.75rem}
 .lg\:w-\[31\%\]{width:31%}
-}
-@media (min-width:768px) {
-.md\:flex-row{flex-direction:row}
-.md\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}
-.md\:items-end{align-items:flex-end}
-}
-@media (min-width:640px) {
-.sm\:flex{display:flex}
-.sm\:flex-row{flex-direction:row}
-.sm\:h-52{height:13rem}
-.sm\:items-center{align-items:center}
-.sm\:p-10{padding:2.5rem}
-.sm\:p-8{padding:2rem}
-.sm\:text-4xl{font-size:2.25rem;line-height:2.5rem}
-.sm\:text-5xl{font-size:3rem;line-height:1}
-.sm\:text-base{font-size:1rem;line-height:1.5rem}
-.sm\:text-lg{font-size:1.125rem;line-height:1.75rem}
-.sm\:w-\[46\%\]{width:46%}
 }
 
 /* ---------- Animaciones de entrada (hero + scroll reveal) ---------- */
@@ -432,4 +438,51 @@ h1,h2,h3,h4,h5,h6 { font-size: inherit; font-weight: inherit; }
   .reveal.is-visible {
     animation: none;
   }
+}
+
+/* ---------- Ajustes responsive adicionales ---------- */
+
+/* Evita que el header fijo (h-20 = 80px) tape el inicio de cada sección
+   al navegar por ancla desde el menú (#diferencia, #trabajos, etc.). */
+#diferencia, #trabajos, #servicios, #mision-vision, #contacto {
+  scroll-margin-top: 96px;
+}
+
+/* Badge de origen del hero: en pantallas muy angostas (<400px) el segmento
+   "• Estándar Puro" no cabe junto a "Nueva Zelanda → Chile" y rompe la forma
+   de la píldora al envolver texto. Se oculta ese segmento secundario y se
+   conserva solo la información principal en una sola línea. */
+@media (max-width: 400px) {
+  .hero-badge-extra {
+    display: none;
+  }
+}
+
+/* Puntos de paginación del carrusel de "Trabajos terminados".
+   Cada botón tiene un área táctil de 24x24px aunque el punto visible sea chico. */
+.galeria-dot-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  background: transparent;
+  border: none;
+  flex-shrink: 0;
+}
+.galeria-dot {
+  display: block;
+  width: 7px;
+  height: 7px;
+  border-radius: 9999px;
+  background-color: rgba(255, 255, 255, 0.35);
+  transition: background-color 250ms ease, width 250ms ease;
+}
+.galeria-dot-btn:hover .galeria-dot {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.galeria-dot-btn.is-active .galeria-dot {
+  background-color: #F2AD6D;
+  width: 20px;
 }
