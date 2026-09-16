@@ -450,6 +450,12 @@
 <div class="absolute top-4 left-4 px-3 py-1 rounded-full bg-[#2C3440]/90 backdrop-blur-md text-white text-xs font-bold uppercase tracking-wider">Nueva Zelanda</div>
 <span class="absolute bottom-4 right-4 w-9 h-9 rounded-full bg-white/15 backdrop-blur-md flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity"><span class="material-symbols-outlined text-[18px]">zoom_in</span></span>
 </div>
+<div class="reveal group relative h-80 w-carousel-card sm:w-[46%] lg:w-[31%] flex-shrink-0 snap-center rounded-3xl overflow-hidden shadow-xl border border-white/10 cursor-zoom-in" onclick="abrirGaleriaLightbox(this)">
+<img alt="Casa con piscina y cordillera, trabajo en altura, Chile" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="images/work-chile-pool.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent"></div>
+<div class="absolute top-4 left-4 px-3 py-1 rounded-full bg-[#1C2E17]/90 backdrop-blur-md text-[#F2AD6D] text-xs font-bold uppercase tracking-wider">Chile</div>
+<span class="absolute bottom-4 right-4 w-9 h-9 rounded-full bg-white/15 backdrop-blur-md flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity"><span class="material-symbols-outlined text-[18px]">zoom_in</span></span>
+</div>
 </div>
 <!-- Flechas de navegación -->
 <button aria-label="Anterior" class="hidden sm:flex absolute -left-4 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-white shadow-lg items-center justify-center text-[#1C2E17] hover:bg-[#F2AD6D] transition-colors z-10" onclick="moverGaleria(-1)" type="button">
@@ -461,16 +467,17 @@
 </div>
 <!-- Puntos de paginación: indican cuántas fotos hay y cuál está activa (se actualizan al hacer scroll/swipe) -->
 <div class="galeria-dots flex items-center justify-center flex-wrap gap-1 mt-5" id="galeria-dots">
-<button aria-current="true" aria-label="Ir a la foto 1 de 10" class="galeria-dot-btn is-active" data-dot-index="0" onclick="irAFotoGaleria(0)" type="button"><span class="galeria-dot"></span></button>
-<button aria-label="Ir a la foto 2 de 10" class="galeria-dot-btn" data-dot-index="1" onclick="irAFotoGaleria(1)" type="button"><span class="galeria-dot"></span></button>
-<button aria-label="Ir a la foto 3 de 10" class="galeria-dot-btn" data-dot-index="2" onclick="irAFotoGaleria(2)" type="button"><span class="galeria-dot"></span></button>
-<button aria-label="Ir a la foto 4 de 10" class="galeria-dot-btn" data-dot-index="3" onclick="irAFotoGaleria(3)" type="button"><span class="galeria-dot"></span></button>
-<button aria-label="Ir a la foto 5 de 10" class="galeria-dot-btn" data-dot-index="4" onclick="irAFotoGaleria(4)" type="button"><span class="galeria-dot"></span></button>
-<button aria-label="Ir a la foto 6 de 10" class="galeria-dot-btn" data-dot-index="5" onclick="irAFotoGaleria(5)" type="button"><span class="galeria-dot"></span></button>
-<button aria-label="Ir a la foto 7 de 10" class="galeria-dot-btn" data-dot-index="6" onclick="irAFotoGaleria(6)" type="button"><span class="galeria-dot"></span></button>
-<button aria-label="Ir a la foto 8 de 10" class="galeria-dot-btn" data-dot-index="7" onclick="irAFotoGaleria(7)" type="button"><span class="galeria-dot"></span></button>
-<button aria-label="Ir a la foto 9 de 10" class="galeria-dot-btn" data-dot-index="8" onclick="irAFotoGaleria(8)" type="button"><span class="galeria-dot"></span></button>
-<button aria-label="Ir a la foto 10 de 10" class="galeria-dot-btn" data-dot-index="9" onclick="irAFotoGaleria(9)" type="button"><span class="galeria-dot"></span></button>
+<button aria-current="true" aria-label="Ir a la foto 1 de 11" class="galeria-dot-btn is-active" data-dot-index="0" onclick="irAFotoGaleria(0)" type="button"><span class="galeria-dot"></span></button>
+<button aria-label="Ir a la foto 2 de 11" class="galeria-dot-btn" data-dot-index="1" onclick="irAFotoGaleria(1)" type="button"><span class="galeria-dot"></span></button>
+<button aria-label="Ir a la foto 3 de 11" class="galeria-dot-btn" data-dot-index="2" onclick="irAFotoGaleria(2)" type="button"><span class="galeria-dot"></span></button>
+<button aria-label="Ir a la foto 4 de 11" class="galeria-dot-btn" data-dot-index="3" onclick="irAFotoGaleria(3)" type="button"><span class="galeria-dot"></span></button>
+<button aria-label="Ir a la foto 5 de 11" class="galeria-dot-btn" data-dot-index="4" onclick="irAFotoGaleria(4)" type="button"><span class="galeria-dot"></span></button>
+<button aria-label="Ir a la foto 6 de 11" class="galeria-dot-btn" data-dot-index="5" onclick="irAFotoGaleria(5)" type="button"><span class="galeria-dot"></span></button>
+<button aria-label="Ir a la foto 7 de 11" class="galeria-dot-btn" data-dot-index="6" onclick="irAFotoGaleria(6)" type="button"><span class="galeria-dot"></span></button>
+<button aria-label="Ir a la foto 8 de 11" class="galeria-dot-btn" data-dot-index="7" onclick="irAFotoGaleria(7)" type="button"><span class="galeria-dot"></span></button>
+<button aria-label="Ir a la foto 9 de 11" class="galeria-dot-btn" data-dot-index="8" onclick="irAFotoGaleria(8)" type="button"><span class="galeria-dot"></span></button>
+<button aria-label="Ir a la foto 10 de 11" class="galeria-dot-btn" data-dot-index="9" onclick="irAFotoGaleria(9)" type="button"><span class="galeria-dot"></span></button>
+<button aria-label="Ir a la foto 11 de 11" class="galeria-dot-btn" data-dot-index="10" onclick="irAFotoGaleria(10)" type="button"><span class="galeria-dot"></span></button>
 </div>
 </div>
 <!-- Lightbox de galería -->
