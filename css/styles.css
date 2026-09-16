@@ -476,3 +476,16 @@ h1,h2,h3,h4,h5,h6 { font-size: inherit; font-weight: inherit; }
   background-color: #F2AD6D;
   width: 20px;
 }
+
+/* Botón CTA "Escríbenos por WhatsApp" de la sección final de contacto.
+   Este archivo es CSS estático (no Tailwind en vivo): utilidades como
+   px-10/py-5 que no fueron compiladas aquí no generan ninguna regla y
+   quedan como texto muerto en el HTML. Por eso el padding se fija con
+   una clase propia, igualando exactamente el padding del botón
+   "WhatsApp" del header (px-5 py-2.5 = 1.25rem / 0.625rem). */
+.btn-whatsapp-final {
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
