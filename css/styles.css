@@ -489,3 +489,44 @@ h1,h2,h3,h4,h5,h6 { font-size: inherit; font-weight: inherit; }
   padding-left: 1.25rem;
   padding-right: 1.25rem;
 }
+/* Footer: contactos (Instagram, Email, WhatsApp) con ícono, en blanco.
+   Clases propias porque este CSS es estático y no incluye todas las
+   utilidades Tailwind necesarias. */
+.footer-contactos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+}
+@media (min-width: 640px) {
+  .footer-contactos {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+}
+.footer-contacto {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #FFFFFF;
+  font-size: 1.05rem;
+  line-height: 1.4;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+.footer-contacto:hover,
+.footer-contacto:focus-visible {
+  opacity: 0.8;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.footer-contacto svg {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+.footer-copyright {
+  color: rgba(255, 255, 255, 0.8);
+}
